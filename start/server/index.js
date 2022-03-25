@@ -9,6 +9,11 @@ const Animal = require("./resolvers/Animal");
 const server = new ApolloServer({
   typeDefs,
   resolvers: { Query, Category, Animal },
+  context: {
+    mainCards,
+    animals,
+    categories,
+  },
 });
 
 server.listen().then(({ url }) => {

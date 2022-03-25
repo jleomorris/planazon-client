@@ -1,5 +1,5 @@
 const Category = {
-  animals: (parent, args, ctx) => {
+  animals: (parent, args, { animals }) => {
     console.log(parent);
     return animals.filter((animal) => animal.category === parent.id);
   },
