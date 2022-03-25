@@ -61,6 +61,13 @@ const resolvers = {
       return animals.filter((animal) => animal.category === parent.id);
     },
   },
+  Animal: {
+    category: (parent, args, ctx) => {
+      console.log(parent);
+      return categories.find((category) => category.id === parent.category);
+      // return animals.filter((animal) => animal.category === parent.id);
+    },
+  },
 };
 
 const server = new ApolloServer({ typeDefs, resolvers });
