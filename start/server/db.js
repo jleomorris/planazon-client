@@ -37,6 +37,7 @@ const animals = [
     image: "cham",
     title:
       "Beautiful Highly Specialized Clade Lizard with 202 Different Color Combinations",
+    rating: 5.0,
     price: "1,522",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -54,6 +55,7 @@ const animals = [
     image: "dolphin",
     title:
       "Fast and Swift Aquatic Dolphin with Great Accordatic Skills in the Air",
+    rating: 5.0,
     price: "101,432",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -71,6 +73,7 @@ const animals = [
     image: "gorilla",
     title:
       "Black Haired Gorilla with Broad Chest and Shoulder. Would be an Excellent Spot at the Gym",
+    rating: 5.0,
     price: "47,775",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -88,6 +91,7 @@ const animals = [
     image: "horse",
     title:
       "17-year Female Horse with a Luxury Brown Exterior and a Beautiful Red Interior",
+    rating: 5.0,
     price: "13,432",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -105,6 +109,7 @@ const animals = [
     image: "kang",
     title:
       "Large Kangaroo with Muscular Leg and Tail and Pointly Teeth and Ears",
+    rating: 5.0,
     price: "42,453",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -121,6 +126,7 @@ const animals = [
     id: "7",
     image: "ele",
     title: "Grey Male 17 year Elephant with 12 Meter Truck and 5 Meter Tusk",
+    rating: 5.0,
     price: "101,432",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -137,6 +143,7 @@ const animals = [
     id: "8",
     image: "donkey",
     title: "This is the Voice Actor from the Dockey for Shrek.",
+    rating: 5.0,
     price: "179,731",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
