@@ -1,0 +1,9 @@
+.add-container {
+  max-width: 1140px;
+  margin: 2rem auto;
+  padding-left: 15px;
+}
+
+.add-plant-btn {
+  padding: 0.25rem 1rem;
+}
