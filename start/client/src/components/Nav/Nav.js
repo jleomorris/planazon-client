@@ -3,14 +3,17 @@ import "./Nav.css";
 import { Container } from "react-bootstrap";
 import search from "../../assets/svg/loupe.svg";
 import cart from "../../assets/svg/shopping-cart.svg";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
     <div className="Nav">
       <div className="nav-container">
-        <h4 className="header">
-          Planazon<span>.com</span>
-        </h4>
+        <Link to="/">
+          <h4 className="header">
+            Planazon<span>.com</span>
+          </h4>
+        </Link>
         <div className="nav-delivery-info-container">
           <p>Deliver to Laith</p>
           <h2>432 Park Avenue</h2>
