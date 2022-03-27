@@ -1,5 +1,5 @@
 .Nav {
-  background-color: rgb(19, 25, 33);
+  background-color: rgb(19, 33, 20);
   height: 7.5vh;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@
 }
 
 .nav-btn {
-  background-color: rgb(254, 189, 105);
+  background-color: rgb(169, 255, 169);
   width: 3rem;
   border: none;
   border-radius: 0 0.2rem 0.2rem 0;
