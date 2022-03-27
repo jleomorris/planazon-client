@@ -17,6 +17,10 @@ import plantHero from "./image/plant_hero.png";
 import plantMainCard1 from "./image/plant_main_card_1.jpeg";
 import plantMainCard2 from "./image/plant_main_card_2.jpeg";
 import plantMainCard3 from "./image/plant_main_card_3.jpeg";
+import snakePlant from "./image/snake_plant.jpeg";
+import montsera from "./image/montsera.jpeg";
+import alocasiaCuprea from "./image/alocasia_cuprea.jpeg";
+import succulent from "./image/succulent.jpeg";
 
 export default {
   lion,
@@ -38,4 +42,8 @@ export default {
   plantMainCard1,
   plantMainCard2,
   plantMainCard3,
+  snakePlant,
+  montsera,
+  alocasiaCuprea,
+  succulent,
 };

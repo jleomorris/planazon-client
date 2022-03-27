@@ -16,11 +16,10 @@ const mainCards = [
 const animals = [
   {
     id: "1",
-    image: "lion",
-    title:
-      "7-year Male Lion with Large Well Kept Main with a Beautiful Yellow/Brownish Color",
+    image: "snakePlant",
+    title: 'Snake Plant - 10" height',
     rating: 5.0,
-    price: "23,322",
+    price: "14.99",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -161,27 +160,27 @@ const animals = [
 const categories = [
   {
     id: "1",
-    image: "tiger",
-    category: "cats",
-    slug: "cats",
+    image: "snakePlant",
+    category: "Snake plant",
+    slug: "snake-plant",
   },
   {
     id: "2",
-    image: "snake",
-    category: "reptiles",
-    slug: "reptiles",
+    image: "montsera",
+    category: "Montsera",
+    slug: "montsera",
   },
   {
     id: "3",
-    image: "stingray",
-    category: "ocean creatures",
-    slug: "ocean-creatures",
+    image: "alocasiaCuprea",
+    category: "Alocasia cuprea ",
+    slug: "alocasia-cuprea ",
   },
   {
     id: "4",
-    image: "donkey",
-    category: "mammals",
-    slug: "mammals",
+    image: "succulent",
+    category: "Succulents",
+    slug: "succulents",
   },
 ];
 

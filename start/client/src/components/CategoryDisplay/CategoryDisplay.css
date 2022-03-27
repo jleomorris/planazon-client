@@ -1,30 +1,31 @@
 .CategoryDisplay {
-    padding-top: 2rem 
+  padding-top: 2rem;
 }
 .CategoryDisplay-card {
-    border-radius: 100%;
-    overflow: hidden;
-    width: 15rem;
-    height: 15rem;
-    padding-bottom: 2rem;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  padding-bottom: 2rem;
 }
 
 .CategoryDisplay-card-container {
-    width: 15rem;
-    text-align: center;
+  width: 15rem;
+  text-align: center;
 }
 
 .CategoryDisplay-card img {
-    height: 100%;
-    width: 100%
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .CategoryDisplay-card-container h3 {
-   text-align: center;
-   margin-top: -2rem;
+  text-align: center;
+  margin-top: -2rem;
 }
 
 .CategoryDisplay-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
