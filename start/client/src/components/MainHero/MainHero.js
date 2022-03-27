@@ -24,9 +24,9 @@ function MainHero() {
       <Container>
         <div className="header-container">
           <h2>
-            Find your <br /> new four-legged <br /> best friend
+            Find a <br /> new plant baby <br /> for your home
           </h2>
-          <img src={animals.rhino} alt="main hero" />
+          <img src={animals["plantHero"]} alt="main hero" />
         </div>
         <div className="cards-container">
           {data.mainCards.map((card) => {
