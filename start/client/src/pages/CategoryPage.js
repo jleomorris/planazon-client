@@ -10,7 +10,7 @@ const CATEGORY_QUERY = gql`
       id
       category
       slug
-      animals {
+      products {
         id
         title
         price
@@ -37,7 +37,7 @@ function CategoryPage() {
       <Container>
         <h1 className="text-capitalize">
           {data.category.category}
-          <CardDisplay animals={data.category.animals} />
+          <CardDisplay animals={data.category.products} />
         </h1>
       </Container>
     </div>

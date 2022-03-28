@@ -2,13 +2,13 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import animals from "../../assets/images";
 import star from "../../assets/svg/star.svg";
-import "./AnimalPage.css";
+import "./ProductPage.css";
 import { Link, useParams } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
 
-const ANIMAL_QUERY = gql`
+const PRODUCT_QUERY = gql`
   query ($slug: String!) {
-    animal(slug: $slug) {
+    product(slug: $slug) {
       title
       image
       description
@@ -18,9 +18,9 @@ const ANIMAL_QUERY = gql`
   }
 `;
 
-function AnimalPage() {
+function ProductPage() {
   const { slug } = useParams();
-  const { data, loading, error } = useQuery(ANIMAL_QUERY, {
+  const { data, loading, error } = useQuery(PRODUCT_QUERY, {
     variables: {
       slug: slug,
     },
@@ -38,12 +38,12 @@ function AnimalPage() {
       <Container>
         <div className="d-flex">
           <img
-            src={animals[data.animal.image]}
+            src={animals[data.product.image]}
             className="product-img"
             style={{ marginRight: "1rem" }}
           />
           <div className="text-container">
-            <h1>{data.animal.title}</h1>
+            <h1>{data.product.title}</h1>
             <div className="star-container">
               <img src={star} />
               <img src={star} />
@@ -52,13 +52,13 @@ function AnimalPage() {
               <img src={star} />
               <div className="rating-stock-container">
                 <p>1402 rating</p>
-                <p>{data.animal.stock} in stock</p>
+                <p>{data.product.stock} in stock</p>
               </div>
             </div>
             <div className="about-container">
-              <h4>About this Animal</h4>
+              <h4>About this Product</h4>
               {/* <ul> */}
-              {data.animal.description.map((item) => (
+              {data.product.description.map((item) => (
                 <li>{item}</li>
               ))}
               {/* </ul> */}
@@ -66,7 +66,7 @@ function AnimalPage() {
           </div>
           <div className="cart-container border">
             <p className="price">
-              <span>GBP £{data.animal.price}</span>
+              <span>GBP £{data.product.price}</span>
             </p>
             <p className="delivery-time">
               FREE delivery: Thursday, Feb 25 Details
@@ -82,4 +82,4 @@ function AnimalPage() {
   );
 }
 
-export default AnimalPage;
+export default ProductPage;

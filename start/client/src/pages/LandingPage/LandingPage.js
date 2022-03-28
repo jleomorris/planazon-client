@@ -69,13 +69,13 @@ function LandingPage() {
   return (
     <div>
       <MainHero />
-      {/* <CategoryDisplay />
-      <CardDisplay animals={data.animals} />
+      <CategoryDisplay />
+      <CardDisplay animals={data.products} />
       <div className="add-container">
         <button className="add-plant-btn" onClick={addAnimalHandler}>
           Add plant
         </button>
-      </div> */}
+      </div>
     </div>
   );
 }

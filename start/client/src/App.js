@@ -4,7 +4,7 @@ import Nav from "./components/Nav/Nav";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import CategoryPage from "./pages/CategoryPage";
-import AnimalPage from "./pages/AnimalPage/AnimalPage";
+import ProductPage from "./pages/ProductPage/ProductPage";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 const client = new ApolloClient({
@@ -26,7 +26,7 @@ function App() {
               path="/products/:slug"
               component={CategoryPage}
             />
-            <Route exact strict path="/product/:slug" component={AnimalPage} />
+            <Route exact strict path="/product/:slug" component={ProductPage} />
           </Switch>
         </BrowserRouter>
       </ApolloProvider>
