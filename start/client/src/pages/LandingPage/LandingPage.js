@@ -5,9 +5,9 @@ import CardDisplay from "../../components/CardDisplay/CardDisplay";
 import { useQuery, useMutation, gql } from "@apollo/client";
 import "./LandingPage.css";
 
-const ANIMALS_QUERY = gql`
+const PRODUCTS_QUERY = gql`
   {
-    animals {
+    products {
       image
       title
       id
@@ -45,7 +45,7 @@ const ADD_ANIMAL_MUTATION = gql`
 `;
 
 function LandingPage() {
-  const { loading, error, data } = useQuery(ANIMALS_QUERY);
+  const { loading, error, data } = useQuery(PRODUCTS_QUERY);
   const [addAnimal] = useMutation(ADD_ANIMAL_MUTATION);
 
   const addAnimalHandler = () => {
@@ -69,13 +69,13 @@ function LandingPage() {
   return (
     <div>
       <MainHero />
-      <CategoryDisplay />
+      {/* <CategoryDisplay />
       <CardDisplay animals={data.animals} />
       <div className="add-container">
         <button className="add-plant-btn" onClick={addAnimalHandler}>
           Add plant
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

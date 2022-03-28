@@ -1,4 +1,4 @@
-const Animal = {
+const Product = {
   category: (parent, args, { categories }) => {
     console.log(parent);
     return categories.find((category) => category.id === parent.category);
@@ -6,4 +6,4 @@ const Animal = {
   },
 };
 
-module.exports = Animal;
+module.exports = Product;

@@ -1,7 +1,7 @@
 const Category = {
-  animals: (parent, args, { animals }) => {
+  products: (parent, args, { products }) => {
     console.log(parent);
-    return animals.filter((animal) => animal.category === parent.id);
+    return products.filter(() => product.category === parent.id);
   },
 };
 

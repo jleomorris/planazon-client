@@ -6,7 +6,7 @@ const typeDefs = gql`
     image: String!
   }
 
-  type Animal {
+  type Product {
     id: ID!
     image: String!
     title: String!
@@ -24,19 +24,19 @@ const typeDefs = gql`
     image: String!
     category: String!
     slug: String!
-    animals: [Animal!]!
+    products: [Product!]!
   }
 
   type Query {
     mainCards: [MainCard]
-    animals: [Animal!]!
-    animal(slug: String!): Animal
+    products: [Product!]!
+    product(slug: String!): Product
     categories: [Category!]!
     category(slug: String!): Category
   }
 
   type Mutation {
-    addAnimal(
+    addProduct(
       image: String!
       title: String!
       rating: Float
@@ -46,9 +46,9 @@ const typeDefs = gql`
       stock: Int!
       onSale: Boolean
       category: String!
-    ): Animal
-    removeAnimal(id: ID!): Boolean!
-    updateAnimal(
+    ): Product
+    removeProduct(id: ID!): Boolean!
+    updateProduct(
       id: ID!
       image: String
       title: String
@@ -59,7 +59,7 @@ const typeDefs = gql`
       stock: Int
       onSale: Boolean
       category: String
-    ): Animal
+    ): Product
   }
 `;
 

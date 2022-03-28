@@ -1,11 +1,11 @@
 const Query = {
   mainCards: (parent, args, { mainCards }) => mainCards,
-  animals: (parent, args, { animals }) => animals,
-  animal: (parent, args, { animals }) => {
-    const animal = animals.find((animal) => {
-      return animal.slug === args.slug;
+  products: (parent, args, { products }) => products,
+  product: (parent, args, { products }) => {
+    const product = products.find((product) => {
+      return product.slug === args.slug;
     });
-    return animal;
+    return product;
   },
   categories: (parents, args, { categories }) => categories,
   category: (parent, args, { categories }) => {

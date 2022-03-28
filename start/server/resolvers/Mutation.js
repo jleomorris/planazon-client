@@ -1,12 +1,12 @@
 const { v4 } = require("uuid");
 
 const Mutation = {
-  addAnimal: (
+  addProduct: (
     parent,
     { image, title, rating, price, description, slug, stock, onSale, category },
-    { animals }
+    { products }
   ) => {
-    let newAnimal = {
+    let newProduct = {
       id: v4(),
       image,
       title,
@@ -19,15 +19,15 @@ const Mutation = {
       category,
     };
 
-    animals.push(newAnimal);
-    return newAnimal;
+    products.push(newProduct);
+    return newProduct;
   },
-  removeAnimal: (parent, { id }, { animals }) => {
-    let indexToDelete = animals.findIndex((animal) => animal.id === id);
-    animals.splice(indexToDelete, 1);
+  removeProduct: (parent, { id }, { products }) => {
+    let indexToDelete = products.findIndex((product) => product.id === id);
+    products.splice(indexToDelete, 1);
     return true;
   },
-  updateAnimal: (
+  updateProduct: (
     parent,
     {
       id,
@@ -41,26 +41,26 @@ const Mutation = {
       onSale,
       category,
     },
-    { animals }
+    { products }
   ) => {
-    const indexToUpdate = animals.findIndex((animal) => animal.id === id);
-    const oldAnimal = animals[indexToUpdate];
-    const newAnimal = {
-      image: image === undefined ? oldAnimal["image"] : image,
-      title: title === undefined ? oldAnimal["title"] : title,
-      rating: rating === undefined ? oldAnimal["rating"] : rating,
-      price: price === undefined ? oldAnimal["price"] : price,
+    const indexToUpdate = products.findIndex((product) => product.id === id);
+    const oldProduct = product[indexToUpdate];
+    const newProduct = {
+      image: image === undefined ? oldProduct["image"] : image,
+      title: title === undefined ? oldProduct["title"] : title,
+      rating: rating === undefined ? oldProduct["rating"] : rating,
+      price: price === undefined ? oldProduct["price"] : price,
       description:
-        description === undefined ? oldAnimal["description"] : description,
-      slug: slug === undefined ? oldAnimal["slug"] : slug,
-      stock: stock === undefined ? oldAnimal["stock"] : stock,
-      onSale: onSale === undefined ? oldAnimal["onSale"] : onSale,
-      category: category === undefined ? oldAnimal["category"] : category,
+        description === undefined ? oldProduct["description"] : description,
+      slug: slug === undefined ? oldProduct["slug"] : slug,
+      stock: stock === undefined ? oldProduct["stock"] : stock,
+      onSale: onSale === undefined ? oldProduct["onSale"] : onSale,
+      category: category === undefined ? oldProduct["category"] : category,
     };
 
-    const updatedAnimal = { ...oldAnimal, ...newAnimal };
-    animals[indexToUpdate] = updatedAnimal;
-    return updatedAnimal;
+    const updatedProduct = { ...oldProduct, ...newProduct };
+    animals[indexToUpdate] = updatedProduct;
+    return updatedProduct;
   },
 };
 

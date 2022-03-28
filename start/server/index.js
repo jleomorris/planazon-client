@@ -1,18 +1,18 @@
 const { ApolloServer } = require("apollo-server");
-const { mainCards, animals, categories } = require("./db");
+const { mainCards, products, categories } = require("./db");
 const typeDefs = require("./schema");
 // Resolvers
 const Query = require("./resolvers/Query");
 const Mutation = require("./resolvers/Mutation");
 const Category = require("./resolvers/Category");
-const Animal = require("./resolvers/Animal");
+const Product = require("./resolvers/Product");
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers: { Query, Mutation, Category, Animal },
+  resolvers: { Query, Mutation, Category, Product },
   context: {
     mainCards,
-    animals,
+    products,
     categories,
   },
 });

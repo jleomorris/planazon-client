@@ -13,7 +13,7 @@ const mainCards = [
   },
 ];
 
-const animals = [
+const products = [
   {
     id: "1",
     image: "snakePlant",
@@ -181,6 +181,6 @@ const categories = [
 
 module.exports = {
   mainCards,
-  animals,
+  products,
   categories,
 };
