@@ -15,6 +15,7 @@ const CATEGORY_QUERY = gql`
         title
         price
         image
+        slug
       }
     }
   }
@@ -37,7 +38,7 @@ function CategoryPage() {
       <Container>
         <h1 className="text-capitalize">
           {data.category.category}
-          <CardDisplay animals={data.category.products} />
+          <CardDisplay products={data.category.products} />
         </h1>
       </Container>
     </div>

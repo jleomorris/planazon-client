@@ -5,11 +5,11 @@ import star from "../../assets/svg/star.svg";
 import animal from "../../assets/images";
 import { Link } from "react-router-dom";
 
-function Card(props) {
+function Card({ product }) {
   return (
-    <Link to={`/product/${props.animal.slug}`} className="Card">
-      <img className="main-img" src={animal[props.animal.image]} />
-      <h4>{props.animal.title}</h4>
+    <Link to={`/product/${product.slug}`} className="Card">
+      <img className="main-img" src={animal[product.image]} />
+      <h4>{product.title}</h4>
       <div className="card-start">
         <img src={star} />
         <img src={star} />
@@ -19,7 +19,7 @@ function Card(props) {
       </div>
       <div className="card-price">
         <p>GBP £</p>
-        <h4>{props.animal.price}</h4>
+        <h4>{product.price}</h4>
       </div>
       <div className="card-prime">
         <span>prime</span> FREE delivery by{" "}

@@ -83,9 +83,8 @@ function LandingPage() {
       ) : error ? (
         <div>An error occured</div>
       ) : (
-        <CardDisplay animals={data.products} />
+        <CardDisplay products={data.products} />
       )}
-      {/* <CardDisplay animals={data.products} /> */}
       <div className="add-container">
         <button className="add-plant-btn" onClick={addAnimalHandler}>
           Add plant
