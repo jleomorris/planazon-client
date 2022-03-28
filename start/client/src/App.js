@@ -6,9 +6,10 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+const HOSTED_URL = process.env.REACT_APP_HOSTED_URL;
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000",
+  uri: HOSTED_URL,
   cache: new InMemoryCache(),
 });
 
