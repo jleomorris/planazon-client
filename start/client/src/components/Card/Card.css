@@ -9,18 +9,19 @@
 
 .main-img {
   height: 12.5rem;
+  object-fit: cover;
 }
 
 .Card {
   width: 23%;
   margin-top: 2rem;
   cursor: pointer;
-  color: black
+  color: black;
 }
 
 .Card:hover {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 .Card img {
@@ -61,7 +62,7 @@
 
 .card-prime {
   margin-top: 0.2rem;
-  font-size: 1.25rem
+  font-size: 1.25rem;
 }
 
 .card-prime span {

@@ -18,9 +18,13 @@ import plantMainCard1 from "./image/plant_main_card_1.jpeg";
 import plantMainCard2 from "./image/plant_main_card_2.jpeg";
 import plantMainCard3 from "./image/plant_main_card_3.jpeg";
 import snakePlant from "./image/snake_plant.jpeg";
-import montsera from "./image/montsera.jpeg";
+import monstera from "./image/monstera.jpeg";
+import monstera2 from "./image/monstera_2.jpeg";
+import monstera3 from "./image/monstera_3.jpeg";
 import alocasiaCuprea from "./image/alocasia_cuprea.jpeg";
 import succulent from "./image/succulent.jpeg";
+import succulent2 from "./image/succulent_2.jpeg";
+import succulent3 from "./image/succulent_3.jpeg";
 
 export default {
   lion,
@@ -43,7 +47,11 @@ export default {
   plantMainCard2,
   plantMainCard3,
   snakePlant,
-  montsera,
+  monstera,
+  monstera2,
+  monstera3,
   alocasiaCuprea,
   succulent,
+  succulent2,
+  succulent3,
 };

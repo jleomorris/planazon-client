@@ -33,11 +33,10 @@ const animals = [
   },
   {
     id: "2",
-    image: "cham",
-    title:
-      "Beautiful Highly Specialized Clade Lizard with 202 Different Color Combinations",
+    image: "monstera",
+    title: 'Monstera - 8" height',
     rating: 5.0,
-    price: "1,522",
+    price: "12.99",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -46,16 +45,15 @@ const animals = [
     ],
     stock: 14,
     onSale: false,
-    slug: "chameleons",
+    slug: "monstera",
     category: "2",
   },
   {
     id: "3",
-    image: "dolphin",
-    title:
-      "Fast and Swift Aquatic Dolphin with Great Accordatic Skills in the Air",
+    image: "alocasiaCuprea",
+    title: 'Alocasia Cuprea - 15" height',
     rating: 5.0,
-    price: "101,432",
+    price: "£27.99",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -69,11 +67,10 @@ const animals = [
   },
   {
     id: "4",
-    image: "gorilla",
-    title:
-      "Black Haired Gorilla with Broad Chest and Shoulder. Would be an Excellent Spot at the Gym",
+    image: "succulent",
+    title: 'Succulent - 6" height',
     rating: 5.0,
-    price: "47,775",
+    price: "9.99",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -82,16 +79,15 @@ const animals = [
     ],
     stock: 14,
     onSale: false,
-    slug: "gorilla",
+    slug: "succulent",
     category: "4",
   },
   {
     id: "5",
-    image: "horse",
-    title:
-      "17-year Female Horse with a Luxury Brown Exterior and a Beautiful Red Interior",
+    image: "succulent2",
+    title: 'Succulent - 6" height',
     rating: 5.0,
-    price: "13,432",
+    price: "9.99",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -100,16 +96,15 @@ const animals = [
     ],
     stock: 14,
     onSale: false,
-    slug: "horse",
+    slug: "succulent2",
     category: "4",
   },
   {
     id: "6",
-    image: "kang",
-    title:
-      "Large Kangaroo with Muscular Leg and Tail and Pointly Teeth and Ears",
+    image: "succulent3",
+    title: 'Succulent - 6" height',
     rating: 5.0,
-    price: "42,453",
+    price: "9.99",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -118,15 +113,15 @@ const animals = [
     ],
     stock: 14,
     onSale: false,
-    slug: "kangaroo",
+    slug: "succulent3",
     category: "4",
   },
   {
     id: "7",
-    image: "ele",
-    title: "Grey Male 17 year Elephant with 12 Meter Truck and 5 Meter Tusk",
+    image: "monstera2",
+    title: 'Monstera - 12" height',
     rating: 5.0,
-    price: "101,432",
+    price: "19.99",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -135,15 +130,15 @@ const animals = [
     ],
     stock: 14,
     onSale: false,
-    slug: "elephant",
-    category: "4",
+    slug: "monstera2",
+    category: "2",
   },
   {
     id: "8",
-    image: "donkey",
-    title: "This is the Voice Actor from the Dockey for Shrek.",
+    image: "monstera3",
+    title: 'Monstera - 15" height',
     rating: 5.0,
-    price: "179,731",
+    price: "29.99",
     description: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -152,8 +147,8 @@ const animals = [
     ],
     stock: 14,
     onSale: false,
-    slug: "donkey",
-    category: "4",
+    slug: "monstera3",
+    category: "2",
   },
 ];
 
@@ -166,9 +161,9 @@ const categories = [
   },
   {
     id: "2",
-    image: "montsera",
-    category: "Montsera",
-    slug: "montsera",
+    image: "monstera",
+    category: "Monstera",
+    slug: "monstera",
   },
   {
     id: "3",

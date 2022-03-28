@@ -66,7 +66,7 @@ function AnimalPage() {
           </div>
           <div className="cart-container border">
             <p className="price">
-              <span>CAD$ {data.animal.price}</span>
+              <span>GBP £{data.animal.price}</span>
             </p>
             <p className="delivery-time">
               FREE delivery: Thursday, Feb 25 Details

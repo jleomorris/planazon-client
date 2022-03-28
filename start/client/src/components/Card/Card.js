@@ -18,7 +18,7 @@ function Card(props) {
         <img src={star} />
       </div>
       <div className="card-price">
-        <p>CAD $</p>
+        <p>GBP £</p>
         <h4>{props.animal.price}</h4>
       </div>
       <div className="card-prime">
