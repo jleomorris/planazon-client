@@ -29,7 +29,7 @@ function ProductPage() {
   console.log("AnimalPage.useParams", useParams());
   console.log("AnimalPage.data", data);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loading-msg">Loading...</div>;
 
   if (error) return <div>An error occured</div>;
 

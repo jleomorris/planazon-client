@@ -20,7 +20,7 @@ const CATEGORIES_QUERY = gql`
 function CategoryDisplay() {
   const { loading, error, data } = useQuery(CATEGORIES_QUERY);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loading-msg">Loading...</div>;
   if (error) return <div>An error occured</div>;
 
   return (

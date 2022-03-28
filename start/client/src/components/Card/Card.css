@@ -3,7 +3,7 @@
 
 .card-display-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 
@@ -17,6 +17,7 @@
   margin-top: 2rem;
   cursor: pointer;
   color: black;
+  margin-right: 1rem;
 }
 
 .Card:hover {
