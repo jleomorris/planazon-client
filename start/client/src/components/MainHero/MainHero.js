@@ -16,9 +16,6 @@ const FETCH_MAIN_CARDS = gql`
 function MainHero() {
   const { loading, error, data } = useQuery(FETCH_MAIN_CARDS);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>An error occured</div>;
-
   return (
     <div className="MainHero">
       <Container>
@@ -28,20 +25,26 @@ function MainHero() {
           </h2>
           <img src={animals["plantHero"]} alt="main hero" />
         </div>
-        <div className="cards-container">
-          {data.mainCards.map((card) => {
-            return (
-              <div className="card" key={card.title}>
-                <h3>{card.title}</h3>
-                <img
-                  src={animals[card.image]}
-                  style={{ width: "100%" }}
-                  alt="animal main card"
-                />
-              </div>
-            );
-          })}
-        </div>
+        {loading ? (
+          <div className="loading-msg">Loading...</div>
+        ) : error ? (
+          <div>An error occured</div>
+        ) : (
+          <div className="cards-container">
+            {data.mainCards.map((card) => {
+              return (
+                <div className="card" key={card.title}>
+                  <h3>{card.title}</h3>
+                  <img
+                    src={animals[card.image]}
+                    style={{ width: "100%" }}
+                    alt="animal main card"
+                  />
+                </div>
+              );
+            })}
+          </div>
+        )}
       </Container>
     </div>
   );

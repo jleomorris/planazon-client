@@ -63,14 +63,29 @@ function LandingPage() {
     });
   };
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>An error occured</div>;
+  // if (loading)
+  //   return (
+  //     <div className="loading-msg" style={{ minHeight: "100vh" }}>
+  //       Loading...
+  //     </div>
+  //   );
+
+  // if (error) return <div>An error occured</div>;
 
   return (
     <div>
       <MainHero />
       <CategoryDisplay />
-      <CardDisplay animals={data.products} />
+      {loading ? (
+        <div className="loading-msg" style={{ minHeight: "100vh" }}>
+          Loading...
+        </div>
+      ) : error ? (
+        <div>An error occured</div>
+      ) : (
+        <CardDisplay animals={data.products} />
+      )}
+      {/* <CardDisplay animals={data.products} /> */}
       <div className="add-container">
         <button className="add-plant-btn" onClick={addAnimalHandler}>
           Add plant
