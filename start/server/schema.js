@@ -31,6 +31,7 @@ const typeDefs = gql`
     mainCards: [MainCard]
     products: [Product!]!
     product(slug: String!): Product
+    productSearch(searchTerm: String!): [Product!]
     categories: [Category!]!
     category(slug: String!): Category
   }
