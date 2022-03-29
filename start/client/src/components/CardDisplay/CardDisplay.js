@@ -7,7 +7,7 @@ function CardDisplay({ products }) {
     <div className="card-display">
       <Container className="card-display-container">
         {products.map((product) => {
-          return <Card product={product} />;
+          return <Card product={product} key={product.slug} />;
         })}
       </Container>
     </div>

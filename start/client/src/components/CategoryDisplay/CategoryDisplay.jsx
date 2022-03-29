@@ -31,6 +31,7 @@ function CategoryDisplay() {
             <Link
               to={`/products/${category.slug}`}
               className="CategoryDisplay-card-container"
+              key={category.slug}
             >
               <div className="CategoryDisplay-card">
                 <img src={animals[category.image]} alt="category" />
