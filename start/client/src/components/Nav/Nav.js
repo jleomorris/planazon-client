@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Nav.css";
-import { Container } from "react-bootstrap";
 import search from "../../assets/svg/loupe.svg";
 import cart from "../../assets/svg/shopping-cart.svg";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 export default function Nav() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const history = useHistory();
+
+  const onChangeHandler = (e) => {
+    console.log(e.target.value);
+    setSearchTerm(e.target.value);
+  };
+
+  const inputKeyHandler = (e) => {
+    if (e.key === "Enter") {
+      submitHandler();
+    }
+  };
+
+  const submitHandler = () => {
+    history.push(`/search?query=${searchTerm}`);
+    setSearchTerm("");
+  };
+
   return (
     <div className="Nav">
       <div className="nav-container">
@@ -22,9 +40,14 @@ export default function Nav() {
           <select>
             <option>All</option>
           </select>
-          <input />
-          <button className="nav-btn">
-            <img src={search} />
+          <input
+            onChange={(e) => onChangeHandler(e)}
+            onKeyUp={(e) => inputKeyHandler(e)}
+            placeholder="Enter search term"
+            value={searchTerm}
+          />
+          <button className="nav-btn" onClick={submitHandler}>
+            <img src={search} alt="search" />
           </button>
         </div>
         <div className="accounts-returns-cart-container">
@@ -37,7 +60,7 @@ export default function Nav() {
             <h2>& Orders</h2>
           </div>
           <div className="nav-cart-container">
-            <img src={cart} />
+            <img src={cart} alt="cart" />
             <h2>cart</h2>
           </div>
         </div>

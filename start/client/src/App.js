@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import SearchPage from "./pages/SearchPage/SearchPage";
 const HOSTED_URL = process.env.REACT_APP_HOSTED_URL;
 
 const client = new ApolloClient({
@@ -27,6 +28,7 @@ function App() {
               path="/products/:slug"
               component={CategoryPage}
             />
+            <Route exact strict path="/search" component={SearchPage} />
             <Route exact strict path="/product/:slug" component={ProductPage} />
           </Switch>
         </BrowserRouter>
