@@ -5,12 +5,17 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage/ProductPage";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from "@apollo/client";
 import SearchPage from "./pages/SearchPage/SearchPage";
 const HOSTED_URL = process.env.REACT_APP_HOSTED_URL;
 
 const client = new ApolloClient({
-  uri: HOSTED_URL,
+  link: createHttpLink({ uri: "/" }),
   cache: new InMemoryCache(),
 });
 
