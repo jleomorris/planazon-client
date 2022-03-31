@@ -8,6 +8,7 @@ const Category = require("./resolvers/Category");
 const Product = require("./resolvers/Product");
 
 const server = new ApolloServer({
+  cors: true,
   typeDefs,
   resolvers: { Query, Mutation, Category, Product },
   context: {
