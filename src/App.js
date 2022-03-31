@@ -15,7 +15,8 @@ import SearchPage from "./pages/SearchPage/SearchPage";
 const HOSTED_URL = process.env.REACT_APP_HOSTED_URL;
 
 const client = new ApolloClient({
-  link: createHttpLink({ uri: "/" }),
+  link: createHttpLink({ uri: "/graphql" }),
+  // uri: HOSTED_URL,
   cache: new InMemoryCache(),
 });
 
