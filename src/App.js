@@ -12,13 +12,9 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import SearchPage from "./pages/SearchPage/SearchPage";
-const HOSTED_URL = process.env.REACT_APP_HOSTED_URL;
 
 const client = new ApolloClient({
-  // Doesn't work locally, server file needs to be updated
-  // link: createHttpLink({ uri: "/graphql" }),
-  // Works locally
-  uri: HOSTED_URL,
+  uri: "https://planazon-server.herokuapp.com/",
   cache: new InMemoryCache(),
 });
 
