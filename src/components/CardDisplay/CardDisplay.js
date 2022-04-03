@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 
 function CardDisplay({ products }) {
   return (
-    <div className="card-display">
+    <div className="card-display my-5">
       <Container className="card-display-container">
         {products.map((product) => {
           return <Card product={product} key={product.slug} />;

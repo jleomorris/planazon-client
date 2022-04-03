@@ -85,11 +85,11 @@ function LandingPage() {
       ) : (
         <CardDisplay products={data.products} />
       )}
-      <div className="add-container">
+      {/* <div className="add-container">
         <button className="add-plant-btn" onClick={addAnimalHandler}>
           Add plant
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
